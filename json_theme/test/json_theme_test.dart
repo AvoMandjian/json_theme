@@ -8300,7 +8300,7 @@ void main() {
       buttonTheme: const ButtonThemeData(buttonColor: Color(0xffbbbbbb)),
       canvasColor: const Color(0xffcccccc),
       cardColor: const Color(0xffdddddd),
-      cardTheme: const CardTheme(color: Color(0xffeeeeee)),
+      cardTheme: const CardThemeData(color: Color(0xffeeeeee)),
       checkboxTheme: CheckboxThemeData(
         fillColor: WidgetStateProperty.all(const Color(0xff123456)),
       ),
@@ -8341,7 +8341,7 @@ void main() {
         headingTextStyle: const TextStyle(),
         horizontalMargin: 1.0,
       ),
-      dialogTheme: const DialogTheme(backgroundColor: Color(0xee999999)),
+      dialogTheme: const DialogThemeData(backgroundColor: Color(0xee999999)),
       disabledColor: const Color(0xee000000),
       dividerColor: const Color(0xeeaaaaaa),
       dividerTheme: const DividerThemeData(color: Color(0xeebbbbbb)),
@@ -8442,7 +8442,7 @@ void main() {
       switchTheme: SwitchThemeData(
         thumbColor: WidgetStateProperty.all(const Color(0xff123456)),
       ),
-      tabBarTheme: const TabBarTheme(labelColor: Color(0xccffffff)),
+      tabBarTheme: const TabBarThemeData(labelColor: Color(0xccffffff)),
       textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
           backgroundColor: WidgetStateProperty.all(const Color(0xff222222)),
