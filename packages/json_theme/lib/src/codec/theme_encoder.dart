@@ -225,7 +225,7 @@ class ThemeEncoder {
   ///  * [encodeIconThemeData]
   ///  * [encodeSystemUiOverlayStyle]
   ///  * [encodeToolbarTextStyle]
-  static Map<String, dynamic>? encodeAppBarTheme(AppBarTheme? value) {
+  static Map<String, dynamic>? encodeAppBarTheme(AppBarThemeData? value) {
     Map<String, dynamic>? result;
 
     if (value != null) {
@@ -606,7 +606,7 @@ class ThemeEncoder {
   ///  * [encodeEdgeInsetsGeometry]
   ///  * [encodeNotchedShape]
   static Map<String, dynamic>? encodeBottomAppBarTheme(
-    BottomAppBarTheme? value,
+    BottomAppBarThemeData? value,
   ) {
     Map<String, dynamic>? result;
 
@@ -3398,7 +3398,7 @@ class ThemeEncoder {
   ///  * [encodeFloatingLabelBehavior]
   ///  * [encodeTextStyle]
   static Map<String, dynamic>? encodeInputDecorationTheme(
-    InputDecorationTheme? value,
+    InputDecorationThemeData? value,
   ) {
     Map<String, dynamic>? result;
 
@@ -5476,7 +5476,7 @@ class ThemeEncoder {
 
     if (value != null) {
       switch (value) {
-        case ShowValueIndicator.always:
+        case ShowValueIndicator.onDrag:
           result = 'always';
           break;
 
@@ -5491,6 +5491,11 @@ class ThemeEncoder {
         case ShowValueIndicator.onlyForDiscrete:
           result = 'onlyForDiscrete';
           break;
+        case ShowValueIndicator.alwaysVisible:
+        // TODO: Handle this case.
+        // ignore: deprecated_member_use
+        case ShowValueIndicator.always:
+        // TODO: Handle this case.
       }
     }
 
